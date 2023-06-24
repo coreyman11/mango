@@ -7,12 +7,11 @@ import {
 } from "@chakra-ui/react";
 import MiniStatistics from "components/card/MiniStatistics";
 import CheckTable from "./components/CheckTable";
-import ColumnsTable from "./components/ComplexTable";
 import { session } from "@supabase/supabase-js";
 
-const supabase_url = "https://rkchmxczmfbkjysxrqzm.supabase.co";
-const supabase_anon_key = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InJrY2hteGN6bWZia2p5c3hycXptIiwicm9sZSI6ImFub24iLCJpYXQiOjE2ODMzOTE3MjksImV4cCI6MTk5ODk2NzcyOX0.FbsVqj3oOTjnB4BWo7x5M3iLvzUpHkS7yIqXWy1zXX0";
-const supabase = createClient(supabase_url, supabase_anon_key);
+const supabaseUrl = "https://rkchmxczmfbkjysxrqzm.supabase.co";
+const supabaseAnonKey = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InJrY2hteGN6bWZia2p5c3hycXptIiwicm9sZSI6ImFub24iLCJpYXQiOjE2ODMzOTE3MjksImV4cCI6MTk5ODk2NzcyOX0.FbsVqj3oOTjnB4BWo7x5M3iLvzUpHkS7yIqXWy1zXX0";
+const supabase = createClient(supabaseUrl, supabaseAnonKey);
 
 export default function UserReports() {
   const [earnings, setEarnings] = useState(null);
